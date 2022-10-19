@@ -1,0 +1,269 @@
+@media (min-width: 740px) {
+    .hide-on-tab-pc {
+        display: none;
+    }
+}
+/* Low resolution Tablet */
+@media (min-width: 740px) and (max-width: 899px) {
+    .cm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .wide {
+        width: 720px;
+    }
+
+    .header__cart-list {
+        padding: 0 calc((100% - 720px) / 2);
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+    .wide {
+        width: 860px;
+    }
+
+    .header__cart-list {
+        padding: 0 calc((100% - 860px) / 2);
+    }
+}
+
+/* Add padding to main content
+@media (max-width: 739px) {
+    .app__content {
+        padding: 0 4px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 899px) {
+    .app__content {
+        padding: 0 6px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1239px) {
+    .app__content {
+        padding: 0 10px;
+    }
+} */
+
+/* On mobile */
+@media (max-width: 739px) {
+    :root {
+        --header-height: 60px;
+        --navbar-height: 0px;
+    }
+    .toogle-on-mobile,
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-search {
+        justify-content: space-between;
+    }
+
+    .header__search-inp {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        left: 0;
+        z-index: 9;
+        
+    }
+
+    .header__search-inp-wrap {
+        
+    }
+
+    .h-icon__wrap {
+        display: flex;
+        width: 10%;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+
+    .header__logo {
+        text-align: center;
+    }
+
+    .header__logo-img {
+        width: 120px;
+    }
+
+    .header__cart {
+        width: 10%;
+        margin-right: 20px;
+    }
+
+    .header__cart-icon {
+        font-size: 2rem;
+    }
+
+    .header__cart-list {
+        padding: 16px;
+    }
+
+    .header__search-option,
+    .header__search-history {
+        top: 100%;
+    }
+
+    .header__cart-list::after {
+        width: 10px;
+        height: 10px;
+    }
+
+    .app__container {
+        margin-top: calc(var(--header-height) + 46px);
+        padding: 0 10px 0 10px;
+        margin-right: -2px;
+    }
+
+    .product__sold {
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .pagination-item {
+        margin: 0 2px;
+    }
+
+    .pagination-item__link {
+        min-width: 36px;
+        font-size: 1.5rem;
+    }
+
+    .col-info {
+        padding: 0 10%;
+    }
+
+    .footer__qr-img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0,0,0,0.09);
+    }
+
+    .footer__qr-app {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 8px;
+    }
+
+    .footer__qr-download-img {
+        height: 15px;
+    }   
+    
+}
+
+/* On tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    :root {
+        --header-height: 70px;
+        --navbar-height: 0px;
+    }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .app__container {
+        margin-top: calc(var(--header-height) + 10px);
+        /* padding: 0 15px 0 15px; */
+    }
+
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header-search {
+        padding: 0 16px;
+    }
+    /* .header__search-inp {
+        margin-left: 30px;
+    } */
+
+    .header__cart {
+        width: 100px;
+        padding-right: 0;
+        text-align: right;
+    }
+
+    .header__cart-list::after {
+        right: 50px;
+        height: 25px;
+        width: 100px;
+        top: -25px;
+    }
+
+    .col-info {
+        padding: 0 10%;
+    }
+}
+
+/* Mobile and tablet */
+@media (max-width: 1023px) {
+
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .hide-on-mob-tab {
+        display: none;
+    }
+
+    .header__cart-list {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        width: 100%;
+        }
+
+    .header__cart-list::before {
+        display: none;
+    }
+
+    .header__sort-bar {
+        display: flex;
+        z-index: 1;
+    }
+
+    .home-filter {
+        display: none;
+    }
+
+    .grid__column-10 {
+        width: 100%;
+    }
+
+    .footer-line-break {
+        width: 100%;
+        height: 32px;
+    }
+
+    .policy-wrap a {
+        line-height: 1.8rem;
+    }
+
+}
+
+/* Tablets and PCs */
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none;
+    }
+
+    .footer-info {
+        margin: 40px 0;
+        background-color: var(--white-color);
+    }
+}
+
